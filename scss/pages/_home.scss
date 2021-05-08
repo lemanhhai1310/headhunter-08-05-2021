@@ -1,6 +1,9 @@
 .home{
   &__banner{
-    min-height: 591px;
+    @include fluidx(591px,300px,min-height);
+    @include media-breakpoint-up('m'){
+      //min-height: 591px;
+    }
     &__overlay{
       background: rgba($color2, 0.41);
     }
@@ -14,6 +17,10 @@
     }
   }
   &__lagi{
+    padding-top: 20px;
+    @include media-breakpoint-up('m'){
+      padding-top: 20px;
+    }
     &__article{
       @extend .fz-24;
       color: $color2;
@@ -76,6 +83,35 @@
     &__article{
       @extend .home__visao__desc;
       >*{
+        &:nth-child(n+2){
+          margin-top: 15px !important;
+        }
+      }
+    }
+  }
+  &__banggia{
+    &__table{
+      &__dc{
+        border: 1px solid $color2;
+        @extend .home__visao__desc;
+      }
+      tr{
+        td{
+          @extend .home__banggia__table__dc;
+        }
+        th{
+          @extend .home__banggia__table__dc;
+        }
+      }
+    }
+  }
+  &__lienhe{
+    &__content{
+      @extend .home__visao__desc;
+      > *{
+        span{
+          color: red;
+        }
         &:nth-child(n+2){
           margin-top: 15px !important;
         }

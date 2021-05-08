@@ -3,7 +3,7 @@
 <?php require "template-parts/layouts/header.php"; ?>
 
 <!--Banner-->
-<div class="home__banner uk-light uk-section uk-position-relative uk-flex uk-flex-middle uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/Layer3.png" uk-img>
+<div uk-parallax="bgy: -200" class="home__banner uk-light uk-section uk-position-relative uk-flex uk-flex-middle uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/Layer3.png" uk-img>
     <div class="uk-position-cover home__banner__overlay">
 
     </div>
@@ -119,5 +119,60 @@
     </div>
 </div>
 <!--/Quy trình dịch vụ tuyển dụng thuê của vieclam123.vn-->
+
+<!--Bảng giá dịch vụ Headhunter của vieclam123.vn-->
+<div class="home__banggia uk-section-small uk-background-01">
+    <div class="uk-container">
+        <div class="uk-margin uk-text-center">
+            <h3 class="uk-h3 uk-margin-remove home__visao__title1"><span>Bảng giá dịch vụ Headhunter của vieclam123.vn</span></h3>
+        </div>
+        <table class="uk-table uk-table-divider home__banggia__table">
+            <thead>
+            <tr>
+                <th class="uk-text-center">Vị trí cần tuyển</th>
+                <th class="uk-text-center">Bảng giá dịch vụ</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Nhân viên mức lương dưới 5tr/tháng</td>
+                <td>10.000.000 VNĐ</td>
+            </tr>
+            <tr>
+                <td>Nhân viên mức lương trên 5tr/tháng</td>
+                <td>2 tháng lương cơ bản</td>
+            </tr>
+            <tr>
+                <td>Nhân sự cấp cao (quản lý, trưởng phòng,...)</td>
+                <td>3 tháng lương cơ bản</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="uk-margin">
+            <h3 class="uk-h3 uk-margin-remove home__visao__title2"><span>Quy chế bảo hành dịch vụ:</span></h3>
+        </div>
+        <p class="home__visao__desc">
+            - Trả trước 30% phí dịch vụ, sau khi ứng viên đi làm 1 tháng thánh toán nốt 70% còn lại <br>
+            - Bảo hành tối đa 4 tuần, sau 4 tuần nếu không tìm được ứng viên phù hợp cho khách hàng thì trả lại 30% cọc nếu khách hàng yêu cầu kết thúc hợp đồng.
+        </p>
+    </div>
+</div>
+<!--/Bảng giá dịch vụ Headhunter của vieclam123.vn-->
+
+<!--Liên hệ sử dụng dịch vụ Headhunter-->
+<div class="home__lienhe uk-section-small">
+    <div class="uk-container">
+        <div class="uk-margin uk-text-center">
+            <h3 class="uk-h3 uk-margin-remove home__visao__title1"><span>Liên hệ sử dụng dịch vụ Headhunter</span></h3>
+        </div>
+        <div class="home__lienhe__content">
+            <p>Để sử dụng dịch vụ tuyển dụng nhân sự thuê của vieclam123.vn quý doanh nghiệp vui lòng liên hệ theo thông tin sau đây:</p>
+            <p>Hotline: <span>0869.154.226</span></p>
+            <p>Email hỗ trợ: <span>jobthanhxuan@gmail.com</span></p>
+            <p>Địa chỉ: <span>KĐT Định Công, Hoàng Mai, Hà Nội</span></p>
+        </div>
+    </div>
+</div>
+<!--/Liên hệ sử dụng dịch vụ Headhunter-->
 
 <?php require "template-parts/layouts/footer.php"; ?>
