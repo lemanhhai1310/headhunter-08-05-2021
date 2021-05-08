@@ -1,4 +1,18 @@
 .home{
+  &__banner{
+    min-height: 591px;
+    &__overlay{
+      background: rgba($color2, 0.41);
+    }
+    &__title{
+      @extend .fz-48;
+      font-family: $font-RobotoCondensed-Bold;
+    }
+    &__desc{
+      @extend .fz-24;
+      font-family: $font-RobotoCondensed-LightItalic;
+    }
+  }
   &__lagi{
     &__article{
       @extend .fz-24;
@@ -33,15 +47,38 @@
     }
   }
   &__visao{
-    &__title1{
+    &__dc{
       font-family: $font-RobotoCondensed-Bold;
-      @extend .fz-30;
       color: $color2;
+    }
+    &__title1{
+      @extend .fz-30;
+      @extend .home__visao__dc;
       &--c1{
         @extend .fz-24;
       }
       span{
         border-bottom: 1px solid $color2;
+      }
+    }
+    &__title2{
+      @extend .home__visao__dc;
+      @extend .fz-24;
+      span{
+        border-bottom: 1px solid $color2;
+      }
+    }
+    &__desc{
+      @extend .home__lagi__article;
+    }
+  }
+  &__quytrinh{
+    &__article{
+      @extend .home__visao__desc;
+      >*{
+        &:nth-child(n+2){
+          margin-top: 15px !important;
+        }
       }
     }
   }
