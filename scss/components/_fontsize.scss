@@ -1,7 +1,7 @@
 @mixin font-size($i){
   @if $i <= $base-design-font + 2 {
     @include fluidx(base($i),scale_10(base($i)),font-size);
-  } @else if $i <= $base-design-font + 4 {
+  } @else if $i <= $base-design-font + 6 {
     @include fluidx(base($i),scale_9(base($i)),font-size);
   } @else if $i > $base-design-font*2 {
     @include fluidx(base($i),scale_7(base($i)),font-size);
@@ -9,7 +9,7 @@
     @include fluidx(base($i),scale_8(base($i)),font-size);
   }
 }
-$j: 14,15,16,20,30;
+$j: 14,15,16,20,24,30,48;
 @each $i in $j {
   .fz-#{$i}{
     @include font-size($i);

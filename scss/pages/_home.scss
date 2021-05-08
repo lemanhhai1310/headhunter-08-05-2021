@@ -1,0 +1,48 @@
+.home{
+  &__lagi{
+    &__article{
+      @extend .fz-24;
+      color: $color2;
+      font-family: $font-RobotoCondensed-Regular;
+      >*{
+        margin: 0 !important;
+      }
+    }
+    &__breadcrumb{
+      &__dc{
+        @extend .fz-20;
+        text-transform: capitalize;
+        font-family: $font-RobotoCondensed-Regular;
+      }
+      >li{
+        &:nth-child(n+2){
+          &:before{
+            $x: 10px;
+            margin: 0 #{$x} 0 calc(#{$x} - 4px) !important;
+          }
+        }
+        >a{
+          @extend .home__lagi__breadcrumb__dc;
+          color: $color3;
+        }
+        >span{
+          @extend .home__lagi__breadcrumb__dc;
+          color: $color2 !important;
+        }
+      }
+    }
+  }
+  &__visao{
+    &__title1{
+      font-family: $font-RobotoCondensed-Bold;
+      @extend .fz-30;
+      color: $color2;
+      &--c1{
+        @extend .fz-24;
+      }
+      span{
+        border-bottom: 1px solid $color2;
+      }
+    }
+  }
+}
