@@ -54,6 +54,11 @@
     }
   }
   &__visao{
+    &__img{
+      @include media-breakpoint-down('s'){
+        width: 40%;
+      }
+    }
     &__dc{
       font-family: $font-RobotoCondensed-Bold;
       color: $color2;

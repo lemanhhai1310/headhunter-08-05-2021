@@ -77,7 +77,7 @@
                 <div class="uk-child-width-1-2@m uk-flex-middle" uk-grid>
                     <div class="<?= ($k%2 == 0 ) ? 'uk-flex-last@m' : '' ?>">
                         <div class="uk-text-center">
-                            <img src="<?= $v['src'] ?>" alt="">
+                            <img class="home__visao__img" src="<?= $v['src'] ?>" alt="">
                         </div>
                     </div>
                     <div>
